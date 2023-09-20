@@ -62,57 +62,7 @@ t1.to(cart,{
     x:-928,
     duration:1
 })
-setTimeout(()=>{
-    new TypeIt("#txt-anim-target", {
-        speed:50,
-        waitUntilVisible: true,
-      })
-      .delete()
-      .type("From the streats",{delay:500})
-      .move(-2)
-      .delete(1)
-      .type("e")
-      .move(null,{to:"END"})
-      .type(" of Kashmir,")
-      .break()
-      .type("To your Doorstep...",{delay:1000})
-      .delete()
-      .type("Made by the Vendor, the soul",{delay:1000})
-      .move(-10)
-      .type("s")
-      .move(null,{to:"END"})
-      .type(" of India!",{delay:1000})
-      .delete()
-      .type("Best in quality and made with Love",{delay:2000})
-      .delete()
-      .go()
-},7000)
-setInterval(async()=>{
-    new TypeIt("#txt-anim-target", {
-        speed:50,
-        waitUntilVisible: true,
-      })
-      .delete()
-      .type("From the streats",{delay:500})
-      .move(-2)
-      .delete(1)
-      .type("e")
-      .move(null,{to:"END"})
-      .type(" of Kashmir,")
-      .break()
-      .type("To your Doorstep...",{delay:1000})
-      .delete()
-      .type("Made by the Vendor, the soul",{delay:1000})
-      .move(-10)
-      .type("s")
-      .move(null,{to:"END"})
-      .type(" of India!",{delay:1000})
-      .delete()
-      .type("Best in quality and made with Love",{delay:2000})
-      .delete()
-      .go()
 
-},27000)
 t1.to(cld1,{
     scrollTrigger:{
         trigger:cld1,
@@ -186,15 +136,68 @@ t1.to(mtn2,{
     scale:1.2
 })
 }
-
+window.addEventListener('unload', function(e){
+    window.scrollTo(0, 0)
+    });
 preload = document.querySelector(".preloader")
 window.onload=()=>{
     timedAnimation()
     showAdverts()
 }
-
 window.addEventListener("load",()=>{
     preload.style.display = "none"
     document.querySelector("body").removeAttribute("style");
 })
-console.log("Hi")
+setTimeout(()=>{
+    new TypeIt("#txt-anim-target", {
+        speed:50,
+        waitUntilVisible: true,
+      })
+      .delete()
+      .type("From the streats",{delay:500})
+      .move(-2)
+      .delete(1)
+      .type("e")
+      .move(null,{to:"END"})
+      .type(" of Kashmir,")
+      .break()
+      .type("To your Doorstep...",{delay:1000})
+      .delete()
+      .type("Made by the Vendor, the soul",{delay:1000})
+      .move(-10)
+      .type("s")
+      .move(null,{to:"END"})
+      .type(" of India!",{delay:1000})
+      .delete()
+      .type("Best in quality and made with Love",{delay:2000})
+      .delete()
+      .go()
+},7000)
+setInterval(async()=>{
+    new TypeIt("#txt-anim-target", {
+        speed:50,
+        waitUntilVisible: true,
+      })
+      .delete()
+      .type("From the streats",{delay:500})
+      .move(-2)
+      .delete(1)
+      .type("e")
+      .move(null,{to:"END"})
+      .type(" of Kashmir,")
+      .break()
+      .type("To your Doorstep...",{delay:1000})
+      .delete()
+      .type("Made by the Vendor, the soul",{delay:1000})
+      .move(-10)
+      .type("s")
+      .move(null,{to:"END"})
+      .type(" of India!",{delay:1000})
+      .delete()
+      .type("Best in quality and made with Love",{delay:2000})
+      .delete()
+      .go()
+
+},30000)
+
+console.log("Hii")

@@ -1,11 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root{
+    --bg-clr:rgba(0, 0, 0, 0.05);
+    --header-txt:black;
+    --item-cont-bg:white;
+    --item-cont-pd:1rem 3rem;
+    --item-card-bg:rgba(255, 255, 255, 0.05);
+    --item-card-hv:rgba(10,0,100,0.3);
+    --item-card-disabled:rgb(128, 128, 128);
+    --item-card-name:black;
+    --item-card-ff:Arial;
+    --item-card-margin:10px;
+}
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background: rgba(0, 0, 0, 0.05);
+    background: var(--bg-clr);
     overflow-x: hidden
 }
 
@@ -26,6 +45,7 @@ header{
     
 }
 header .banner{
+    color: var(--header-txt);
     font-size: 3rem;
     text-align: center;
     width: 100%;
@@ -35,6 +55,7 @@ header .banner{
     
 }
 header .banner h1{
+    
     z-index: -1;
 }
 header .banner i{
@@ -45,27 +66,6 @@ header .banner i{
     left:-2%;
     transform: translate(-2rem);
 
-}
-header .dots {
-    margin-top:115rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:1rem;
-    position: fixed;
-    left:49%;
-    
-}
-header .dots .d{
-    width: 5px;
-    height: 5px;
-    background: black;
-    border-radius: 50%;
-}
-
-header .dots .d.present{
-    width: 10px;
-    height:10px;;
 }
 
 header .mountains{
@@ -178,6 +178,7 @@ header .field img{
 
 
 header .msg{
+    color: var(--header-txt);
     text-align: center;
     position: absolute;
     display: inline;
@@ -333,6 +334,7 @@ header .adverts img{
 
 
 header .txt-anim{
+    color: var(--header-txt);
     width: 42vw;
     text-align: center;
     text-wrap: wrap;
@@ -346,6 +348,136 @@ header .txt-anim{
 
 
 main{
-    position: absolute;
-    top:500%;
+    position: relative;
+    display: inline-block;
+    top: 145rem;
+    width: 80%;
+    margin: 0 10%;
+}
+
+main .item-cont{
+    display: grid;
+    grid-template-rows: 33rem  30rem 20rem 20rem;
+    gap: 3rem;
+}
+main .item-cont .trending{
+    background: var(--item-cont-bg);
+    padding: var(--item-cont-pd);
+    
+}
+main .item-cont .trending .indicator{
+    color: var(--header-txt);
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+main .item-cont .trending .items{
+    display: grid;
+    grid-template-columns: 18.8% 18.8% 18.8% 18.8% 18.8%;
+    height: 80%;
+    gap: 20px;
+}
+
+main .item-cont .trending .items .item{
+    cursor: pointer;
+    background: var(--item-card-bg);
+    height: 85%;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+main .item-cont .trending .items .item:hover{
+    box-shadow: 0px 0px 10px 15px var(--item-card-hv);
+    scale: 1.1;
+}
+
+main .item-cont .trending .items .item .item-prev{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+}
+main .item-cont .trending .items .item .item-prev img{
+    width: 100%;
+    height: 100%;
+}
+main .item-cont .trending .items .item .item-cat-name{
+    display: block;
+    
+}
+
+main .item-cont .trending .items .item .item-cat-name .cat{
+    font-size: 18px;
+    color: var(--item-card-disabled) ;
+    margin: var(--item-card-margin);
+    font-family:var(--item-card-ff);
+    
+}
+
+main .item-cont .trending .items .item .item-cat-name .name{
+    font-size: 20px;
+    color: var(--item-card-name) ;
+    font-weight: normal;
+    font-family:var(--item-card-ff);
+    margin:var(--item-card-margin);
+    
+}
+
+main .item-cont .trending .items .item .item-rating{
+    margin: var(--item-card-margin);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+main .item-cont .trending .items .item .item-rating .rat{
+    padding: 3px;
+    width:18%;
+    height:25px;
+    background: #388E3C;
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: white;
+}
+main .item-cont .trending .items .item .item-rating .rat .t{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: bold;
+}
+main .item-cont .trending .items .item .item-rating .num{
+    font-family: var(--item-card-ff);
+    color: var(--item-card-disabled);
+}
+main .item-cont .trending .items .item .item-rating .bs{
+    width: 50%;
+    object-fit: contain;
+}
+main .item-cont .trending .items .item .item-rating .bs img{
+    width: 100%;
+}
+
+main .item-cont .trending .items .item .item-price{
+    display: flex;
+    margin: var(--item-card-margin);
+    gap: 10px;
+    align-items: center;
+}
+
+main .item-cont .trending .items .item .item-price .cp{
+    color: black;
+    font-weight: bolder;
+    font-family: var(--item-card-ff);
+    font-size: 25px;
+    
+}
+main .item-cont .trending .items .item .item-price .org{
+    color: var(--item-card-disabled);
+    font-family: var(--item-card-ff);
+    text-decoration: line-through;
+}
+main .item-cont .trending .items .item .item-price .dis{
+    font-size: 14px;
+    color:#388E49;
 }
