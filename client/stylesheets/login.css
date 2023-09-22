@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-color: #f0f0f0;
+    font-family: Poppins;
+    overflow: hidden;
+    
+}
+#particles-js{
+width: 100%;
+height: 110%;
+position: absolute;
+background-color: black;
+}
+.box {
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    background-color: #14222dff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.heading {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+    
+}
+
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.continue-button {
+    margin-top: 10px;
+    background-color: hsla(60, 10%, 6%, 0.733);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #08910f;
+    scale: 1.05;
+}
+
+.signin {
+    padding-top: 2%;
+    padding-left: 2%;
+    color: white;
+}
+
+.terms-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color:white; /* Set the text color to blue */
+}
+
+/* Style the anchor element */
+.terms-text a {
+    text-decoration: underline;
+    color:rgb(127, 127, 201);
+    cursor: pointer;
+}
+.new{
+    margin-top: 40px;
+    color: white;
+}
+.account-button{
+    margin-top: 10px;
+    background-color: hsla(60, 10%, 6%, 0.733);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+.account-button:hover{
+    background-color: #08910f;
+    scale: 1.05;
+}

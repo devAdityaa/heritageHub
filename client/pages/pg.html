@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+        /* Reset some default styles for the demo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Poppins;
+            background-color: #14222d; /* Updated background color */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            color: #fff; /* Updated font color */
+        }
+
+        header {
+            background-color:#45525eff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color:rgb(32, 32, 48);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            background-image: url('https://via.placeholder.com/150'); /* Placeholder image URL */
+            background-size: cover;
+            background-position: center;
+            border-color: aqua;
+            overflow: hidden;
+        }
+        .profile-logo img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .profile h1 {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color:#6d859fff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff8500;
+        }
+
+        footer {
+            text-align: center;
+            background-color:#6d859fff;
+            padding: 10px 0;
+            color: #fff;
+            position: absolute;
+            top:96%;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="profile">
+            <div class="profile-logo">
+                <img src="/assets/profile.jpeg" alt="">
+            </div>
+            <h1>Welcome Aman</h1>
+            <p>Email: aman123@gmail.com</p>
+            <p>Phone: +91 1234567890</p>
+            <button>Edit Profile</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HeritageHub</p>
+    </footer>
+</body>
+</html>
